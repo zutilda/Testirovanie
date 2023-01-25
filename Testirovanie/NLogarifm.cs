@@ -24,7 +24,7 @@ namespace Testirovanie
             }
             double result = 2 * s;
             Program.outputInfo("Result.csv", Math.Round(result, 2), "LN", x);
-            return result;
+            return 2 * s;
         }
     }
 }

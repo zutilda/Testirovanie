@@ -26,6 +26,5 @@ namespace Testirovanie
             Program.outputInfo("Result.csv", Math.Round(result, 2), "lgShow", x);
             return result;
         }
-
     }
 }

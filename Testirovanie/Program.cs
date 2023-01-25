@@ -38,9 +38,8 @@ namespace Testirovanie // Note: actual namespace depends on the project name.
                 sw.WriteLine("Результат метода " + nameMethod + ", при x: " + x + " = " + result);
             }
             Console.WriteLine("Данные записаны");
-
         }
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             double x;
             while (true)
@@ -51,14 +50,14 @@ namespace Testirovanie // Note: actual namespace depends on the project name.
                     x = Double.Parse(Console.ReadLine());
                     if (x < 0)
                     {
-                    Console.WriteLine(first(x));
-                 
+                     Console.WriteLine(first(x));
+                        return 0;
                     }
                     else
                     {
                         Console.WriteLine(second(x));
-                    }
-                    break;
+                        return 1;                       
+                    }  
                 }
                 catch
                 {
