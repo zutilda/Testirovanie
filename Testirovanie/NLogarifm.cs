@@ -8,7 +8,7 @@ namespace Testirovanie
 {
     internal class NLogarifm
     {
-        public static double LN(double x)
+        public  double LN(double x)
         {
             if (x < 1)
             {
@@ -22,14 +22,9 @@ namespace Testirovanie
                 e = p / q;
                 s += e;
             }
-            return 2 * s;
-        }
-        public double lnShow(double x)
-        {
-            double result = LN(x);
-            Program.outputInfo("Result.csv", Math.Round(result, 2), "lnShow", x);
+            double result = 2 * s;
+            Program.outputInfo("Result.csv", Math.Round(result, 2), "LN", x);
             return result;
         }
-
     }
 }
