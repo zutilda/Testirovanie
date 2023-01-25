@@ -16,7 +16,7 @@ namespace Testirovanie // Note: actual namespace depends on the project name.
             double otv = s + c + Math.Pow(c, 2);
             Console.WriteLine("Результат вычислений = " + Math.Round(otv, 4));
             outputInfo("Result.csv", Math.Round(otv, 4), "first", x);
-            return Math.Round(otv, 4);
+            return Math.Round(s + c + Math.Pow(c, 2), 4);
         }
         public static double second(double x)
         {
@@ -29,7 +29,7 @@ namespace Testirovanie // Note: actual namespace depends on the project name.
             double otv = ln * log;
             Console.WriteLine("Результат вычислений = " + Math.Round(otv, 4));
             outputInfo("Result.csv", Math.Round(otv, 4), "second", x);
-            return Math.Round(otv, 4);
+            return Math.Round(ln * log, 4);
         }
         public static void outputInfo(string path, double result, string nameMethod, double x)
         {
